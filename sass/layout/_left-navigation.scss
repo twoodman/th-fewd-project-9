@@ -1,0 +1,28 @@
+.left-navigation {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  min-height: 100%;
+  width: 60px;
+  background: $color-purple-dark;
+  .left-navigation__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .list__item {
+      @include display-flex();
+      @include justify-content(center);
+      @include align-items(center);
+      width: 100%;
+      height: 60px;
+      margin: 20px 0 20px 0;
+      &.active {
+        border-left: 3px solid lime;
+      }
+      img {
+        margin: 0 auto;
+        width: 30px;
+      }
+    }
+  }
+}

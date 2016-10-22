@@ -1,0 +1,24 @@
+.main__search {
+  @include display-flex();
+  @include justify-content(flex-end);
+  @include align-items(center);
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 80%;
+  height: 60px;
+  background: $color-off-white;
+  border-left: 1px solid $color-gray;
+  border-bottom: 1px solid $color-gray;
+  .dashboard-search {
+    @include border-radius(5px);
+    font-size: $base-font-size;
+    font-family: $lato-stack;
+    font-weight: lighter;
+    margin-right: 20px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid $color-gray;
+    padding: 10px;
+  }
+}
